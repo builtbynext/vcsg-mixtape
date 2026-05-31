@@ -1,19 +1,31 @@
-import { Button } from "@/components/ui/button"
+import { MixtapeExperience } from "@/components/mixtape-experience"
+import { TapeNav } from "@/components/tape-nav"
+import { TapeShelf } from "@/components/tape-shelf"
+import { getAllTapes } from "@/lib/tapes"
 
-export default function Page() {
+export default async function HomePage() {
+  const tapes = await getAllTapes()
+  const latest = tapes[0]
+
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <div className="mix-root">
+      <h2 className="sr-only">The Mixtape by Vibe Coders SG — meetup recaps, decoded</h2>
+      <TapeNav tapes={tapes} />
+      {latest ? (
+        <>
+          <MixtapeExperience tape={latest} />
+          <hr className="tape-divider" />
+          <TapeShelf tapes={tapes} activeSlug={latest.slug} />
+        </>
+      ) : (
+        <div className="tape-hero">
+          <div className="tape-eyebrow">No tapes yet</div>
+          <h1 className="tape-title">The shelf is empty</h1>
+          <p style={{ fontSize: 13, color: "var(--color-text-muted)", marginTop: 8 }}>
+            Add your first tape to <code>content/tapes/</code>.
+          </p>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+      )}
     </div>
   )
 }
