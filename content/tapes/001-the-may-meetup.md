@@ -267,11 +267,11 @@ Challenges included optimizing performance to keep the UI smooth with many image
 
 ### What it is
 
-TakeTime is a habit tracking app designed for individuals who want to record and visualize their daily habits with rich context, making it easier to understand their routines over time.
+Things Take Time is a habit tracking app designed for individuals who want to record and visualize their daily habits with rich context, making it easier to understand their routines over time.
 
 ### Why this was made
 
-Chester, a software engineer, developed TakeTime because he personally used a manual method of habit tracking by editing messages to himself daily. He found existing habit tracker apps lacking because they show habits in isolation without context, making it hard to understand why habits were missed or how they relate to each other.
+Chester, a software engineer, developed Things Take Time because he personally used a manual method of habit tracking by editing messages to himself daily. He found existing habit tracker apps lacking because they show habits in isolation without context, making it hard to understand why habits were missed or how they relate to each other.
 
 He wanted a tool that combined the simplicity of his message-editing method with a more visual, contextual approach. Analog methods like bullet journaling inspired him, but he needed a digital solution that was less tedious and more visually clear.
 
@@ -284,7 +284,7 @@ He wanted a tool that combined the simplicity of his message-editing method with
 
 ### How it works
 
-TakeTime organizes habits in a grid where each row represents a day and each column represents a habit. Users can quickly check off habits daily using a simple interface. This layout allows users to scan horizontally across a day to see all habits completed or missed, providing immediate context rather than isolated data points.
+Things Take Time organizes habits in a grid where each row represents a day and each column represents a habit. Users can quickly check off habits daily using a simple interface. This layout allows users to scan horizontally across a day to see all habits completed or missed, providing immediate context rather than isolated data points.
 
 ### Try This
 
@@ -292,9 +292,9 @@ Try tracking one habit daily by writing a simple note or message to yourself eac
 
 ### Under the hood
 
-Chester built TakeTime as a mobile app available on the App Store. The app features a bottom sheet interface for quick habit check-offs and uses a grid-style layout inspired by analog habit trackers and message editing.
+Chester built Things Take Time as a mobile app available on the App Store. The app features a bottom sheet interface for quick habit check-offs and uses a grid-style layout inspired by analog habit trackers and message editing.
 
-He used Figma Cloud extensively for design iterations and emphasized that building a quality app takes time and continuous effort over many months. The project roadmap includes new tracker types and translations, showing ongoing development based on user feedback.
+He used Figma extensively for design iterations and emphasized that building a quality app takes time and continuous effort over many months. The project roadmap includes new tracker types and translations, showing ongoing development based on user feedback.
 
 ### Suggestions for your own projects:  
 - Build tools that solve your own problems first to maintain motivation.  
@@ -333,7 +333,7 @@ If you ride a motorcycle, try noting down or sharing information about parking s
 
 ### Under the hood
 
-Kai used Cloud Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore’s motorcyclists.
+Kai used Claude Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore’s motorcyclists.
 
 Key challenges include verifying crowdsourced data and categorizing parking spots into public, private, special-use (like Grab delivery rider spots), and unofficial parking areas. Kai is exploring ways to handle these categories responsibly, especially unofficial spots that might carry liability risks.
 
@@ -372,7 +372,7 @@ Try breaking down a complex problem into simple questions that guide users to so
 
 ### Under the hood
 
-The presenter built cancheck using no-code tools, primarily ClockMax (transcribed as "ClockMax") and Notion for content management, and deployed it on Vercel for hosting and tracking. He did not write or review any code himself, relying entirely on no-code platforms.
+The presenter built cancheck using no-code tools, primarily Claude Max and Notion for content management, and deployed it on Vercel for hosting and tracking. He did not write or review any code himself, relying entirely on no-code platforms.
 
 Notable decisions include:
 * Using simple, primary school-level language for all assistance schemes to ensure accessibility.
@@ -452,7 +452,7 @@ Try breaking down a repetitive task you do regularly into smaller steps. Then im
 
 ### Under the hood
 
-Cheryl used a tool called Plot (transcribed as "Plot") to build the AI sub-agents and define "skills," which are instructions guiding each sub-agent’s actions. She learned how to create these skills by asking Plot itself for help, showing an interactive, self-teaching approach.
+Cheryl used a tool called Claude to build the AI sub-agents and define "skills," which are instructions guiding each sub-agent’s actions. She learned how to create these skills by asking Claude itself for help, showing an interactive, self-teaching approach.
 
 The agents handle tasks like counting license volumes, filling form fields row by row, calculating time saved, and generating annotated PDFs. The workflow is private and hosted internally, tailored specifically for Cheryl’s license review role in the Singapore government.
 
