@@ -291,6 +291,12 @@ body {
 }
 .summary-bullets li::before { content: "—"; color: var(--color-text-muted); flex-shrink: 0; }
 
+.track-desc-section { margin: 14px 0; }
+.track-desc-heading {
+  font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--color-text-muted); margin-bottom: 6px;
+}
+
 .why-matters {
   background: var(--color-bg-alt);
   border: 0.5px solid var(--color-border-faint);
