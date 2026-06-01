@@ -4,6 +4,7 @@ import { useCallback, useRef, useState } from "react"
 
 import type { Tape, Track } from "@/lib/tape-types"
 import { formatTapeDate } from "@/lib/tape-types"
+import { Markdown } from "@/components/markdown"
 
 function pad(n: number) {
   return String(n).padStart(2, "0")
@@ -59,6 +60,30 @@ function DemoVideo({
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
+    </div>
+  )
+}
+
+function Accordion({
+  label,
+  children,
+}: {
+  label: string
+  children: React.ReactNode
+}) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="accordion">
+      <button
+        type="button"
+        className="accordion-trigger"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+      >
+        <span>{label}</span>
+        <span className={`accordion-chevron${open ? " open" : ""}`}>▸</span>
+      </button>
+      {open && <div className="accordion-content">{children}</div>}
     </div>
   )
 }
@@ -159,6 +184,12 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
         )}
       </div>
 
+      {tape.note && (
+        <div className="tape-note">
+          <Markdown>{tape.note}</Markdown>
+        </div>
+      )}
+
       <div className="tape-section-head">
         <span className="section-label">Tracklist — all {tracks.length} demos</span>
         <div className="section-line" />
@@ -235,6 +266,12 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
               <div className="why-label">why you should care</div>
               <div className="why-text">{track.whyYouShouldCare}</div>
             </div>
+          )}
+
+          {track.description && (
+            <Accordion label="expanded description">
+              <Markdown>{track.description}</Markdown>
+            </Accordion>
           )}
 
           {track.screenshots && track.screenshots.length > 0 && (

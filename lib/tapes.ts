@@ -48,10 +48,66 @@ function normalizeTrack(raw: unknown): Track {
   }
 }
 
+interface TrackDescription {
+  name: string
+  content: string
+}
+
+function parseTrackBody(
+  tracks: Track[],
+  body: string,
+): { descriptions: TrackDescription[]; recap: string } {
+  const trimmed = body.trim()
+  if (!trimmed) return { descriptions: [], recap: "" }
+
+  const separatorMatch = trimmed.match(/\n{2,}---\n{2,}/)
+  if (!separatorMatch) {
+    return { descriptions: [], recap: trimmed }
+  }
+
+  const sepIndex = separatorMatch.index!
+  const descriptionsBlock = trimmed.slice(0, sepIndex)
+  const recap = trimmed.slice(sepIndex + separatorMatch[0].length).trim()
+
+  const trackNames = new Set(tracks.map((t) => t.name))
+  const descriptions: TrackDescription[] = []
+
+  const headingRegex = /^## (.+)$/gm
+  const matches = [...descriptionsBlock.matchAll(headingRegex)]
+
+  for (let i = 0; i < matches.length; i++) {
+    const name = matches[i][1].trim()
+    if (!trackNames.has(name)) continue
+
+    const contentStart = matches[i].index! + matches[i][0].length
+    const contentEnd =
+      i + 1 < matches.length ? matches[i + 1].index! : descriptionsBlock.length
+
+    const content = descriptionsBlock.slice(contentStart, contentEnd).replace(/^\n+/, "").trim()
+    if (content) {
+      descriptions.push({ name, content })
+    }
+  }
+
+  return { descriptions, recap }
+}
+
 async function parseTape(filePath: string): Promise<Tape> {
   const raw = await fs.promises.readFile(filePath, "utf8")
   const { data, content } = matter(raw)
   const slug = path.basename(filePath).replace(/\.mdx?$/, "")
+
+  const tracks: Track[] = Array.isArray(data.tracks)
+    ? data.tracks.map(normalizeTrack)
+    : []
+
+  const { descriptions, recap } = parseTrackBody(tracks, content)
+
+  const descriptionMap = new Map(descriptions.map((d) => [d.name, d.content]))
+  for (const track of tracks) {
+    const desc = descriptionMap.get(track.name)
+    if (desc) track.description = desc
+  }
 
   return {
     slug,
@@ -66,8 +122,8 @@ async function parseTape(filePath: string): Promise<Tape> {
     inTheRoom: typeof data.inTheRoom === "number" ? data.inTheRoom : undefined,
     color: data.color ? String(data.color) : undefined,
     published: data.published !== false,
-    note: content.trim() || undefined,
-    tracks: Array.isArray(data.tracks) ? data.tracks.map(normalizeTrack) : [],
+    note: recap || undefined,
+    tracks,
   }
 }
 
