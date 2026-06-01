@@ -99,14 +99,15 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
   return (
     <>
       <div className="tape-hero">
-        <div className="tape-eyebrow">Vol. {tape.tapeNumber}</div>
+        <div className="tape-eyebrow">Mixtape Vol. {tape.tapeNumber}</div>
         <h1 className="tape-title">{tape.title}</h1>
         <div className="tape-meta">
           {tape.date && <span>{formatTapeDate(tape.date)}</span>}
           {tape.location && <><span className="dot">·</span><span>{tape.location}</span></>}
           <span className="dot">·</span>
           <span>{tracks.length} demos</span>
-          {tape.curator && <><span className="dot">·</span><span>Curated by {tape.curator}</span></>}
+          {tape.curator && <><span className="dot">·</span><span>Curated by {tape.curatorUrl ? <a href={tape.curatorUrl} target="_blank" rel="noopener noreferrer">{tape.curator}</a> : tape.curator}</span></>}
+          {tape.decoder && <><span className="dot">·</span><span>Decoded by {tape.decoderUrl ? <a href={tape.decoderUrl} target="_blank" rel="noopener noreferrer">{tape.decoder}</a> : tape.decoder}</span></>}
         </div>
 
         <div className="tape-cassette">

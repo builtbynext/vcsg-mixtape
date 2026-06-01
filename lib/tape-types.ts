@@ -21,6 +21,9 @@ export interface Tape {
   date: string
   location?: string
   curator?: string
+  curatorUrl?: string
+  decoder?: string
+  decoderUrl?: string
   runtime?: string
   builders?: number
   inTheRoom?: number
