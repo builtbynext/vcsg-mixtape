@@ -4,6 +4,7 @@ tapeNumber: "001"
 side: 0
 date: 2026-05-28
 location: LorongAI @ 22 Cross
+locationUrl: https://lorong.ai/
 curator: Stewart
 curatorUrl: https://linkedin.com/in/stewartsg
 decoder: Wei Rong

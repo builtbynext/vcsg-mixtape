@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Agentation } from "agentation"
 import {
   Geist_Mono,
   IBM_Plex_Mono,
@@ -37,7 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${mono.variable} ${plexMono.variable} ${specialElite.variable} ${baskerville.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        {process.env.NODE_ENV === "development" && <Agentation />}
+      </body>
     </html>
   )
 }

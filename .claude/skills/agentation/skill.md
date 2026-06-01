@@ -1,0 +1,1 @@
+/Users/stewart/Desktop/projects/nextjs/vcsg-mixtape/.agents/skills/agentation/SKILL.md
