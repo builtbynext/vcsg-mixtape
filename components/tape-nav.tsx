@@ -9,7 +9,7 @@ export function TapeNav({ tapes }: { tapes: Tape[] }) {
   return (
     <nav className="tape-nav">
       <Link href="https://vibecoderscommunity.github.io/" className="tape-logo">
-        The Mixtape <span>by Vibe Coders SG</span>
+        Mixtape <span>by Vibe Coders SG</span>
       </Link>
       <div className="tape-navlinks">
         {latest && (
@@ -21,7 +21,7 @@ export function TapeNav({ tapes }: { tapes: Tape[] }) {
           <Link href={`/tapes/${prev.slug}`}>
             Side {prev.side} · {formatTapeDate(prev.date)}
           </Link>
-        )} 
+        )}
       </div>
     </nav>
   )

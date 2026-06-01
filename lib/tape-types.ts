@@ -6,7 +6,11 @@ export interface Screenshot {
 export interface Track {
   name: string
   builder: string
+  builderLinkedinUrl?: string
+  builderWebsiteUrl?: string
+  builderInstagramUrl?: string
   youtubeId?: string
+  youtubeStartTime?: number
   duration?: string
   whatTheyBuilt?: string[]
   whyYouShouldCare?: string
@@ -21,7 +25,11 @@ export interface Tape {
   side: string
   date: string
   location?: string
+  locationUrl?: string
   curator?: string
+  curatorUrl?: string
+  decoder?: string
+  decoderUrl?: string
   runtime?: string
   builders?: number
   inTheRoom?: number
