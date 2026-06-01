@@ -140,7 +140,7 @@ If you want to experiment, try setting up a simple chatbot that can take instruc
 
 ### What it is
 
-Dojojojo is a gamified fitness app that allows users to nurture and grow AI-generated pets by tracking their physical steps, nutrition, and workouts.
+Dojojojo is a gamified fitness app where your workouts actually mean something. Track your steps, nutrition, and exercise to grow and evolve your pet and card collection — then take your pets equipped with cards into auto battles. Vision AI tracks your moves in real time and blends in with levelling mechanics, staying consistent has never been this fun.
 
 ### Why this was made
 
