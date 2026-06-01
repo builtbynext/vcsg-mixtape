@@ -14,6 +14,7 @@ export interface Track {
   duration?: string
   whatTheyBuilt?: string[]
   whyYouShouldCare?: string
+  description?: string
   screenshots?: Screenshot[]
 }
 

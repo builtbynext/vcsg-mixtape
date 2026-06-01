@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 
 import type { Tape, Track } from "@/lib/tape-types"
 import { formatTapeDate } from "@/lib/tape-types"
+import { Markdown } from "@/components/markdown"
 
 function pad(n: number) {
   return String(n).padStart(2, "0")
@@ -109,6 +110,77 @@ function DemoVideo({
         allowFullScreen
       />
     </div>
+  )
+}
+
+function Accordion({
+  label,
+  children,
+}: {
+  label: string
+  children: React.ReactNode
+}) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="accordion">
+      <button
+        type="button"
+        className="accordion-trigger"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+      >
+        <span>{label}</span>
+        <span className={`accordion-chevron${open ? " open" : ""}`}>▸</span>
+      </button>
+      {open && <div className="accordion-content">{children}</div>}
+    </div>
+  )
+}
+
+const ALWAYS_VISIBLE = ["what it is", "why this was made", "why this matters"]
+const ACCORDION_SECTIONS = ["how it works", "under the hood", "try this"]
+
+function parseDescriptionSections(md: string): { heading: string; content: string }[] {
+  const sections: { heading: string; content: string }[] = []
+  const lines = md.split("\n")
+  let heading = ""
+  let buf: string[] = []
+
+  for (const line of lines) {
+    if (line.startsWith("### ")) {
+      if (buf.join("").trim()) sections.push({ heading, content: buf.join("\n").trim() })
+      heading = line.slice(4).trim()
+      buf = []
+    } else {
+      buf.push(line)
+    }
+  }
+  if (buf.join("").trim()) sections.push({ heading, content: buf.join("\n").trim() })
+  return sections
+}
+
+function TrackDescription({ description }: { description: string }) {
+  const sections = parseDescriptionSections(description)
+  const visible = sections.filter((s) => ALWAYS_VISIBLE.includes(s.heading.toLowerCase()))
+  const accordions = sections.filter((s) => {
+    const lower = s.heading.toLowerCase()
+    return ACCORDION_SECTIONS.some((k) => lower.startsWith(k))
+  })
+
+  return (
+    <>
+      {visible.map((s) => (
+        <div key={s.heading} className="track-desc-section">
+          <div className="track-desc-heading">{s.heading}</div>
+          <Markdown>{s.content}</Markdown>
+        </div>
+      ))}
+      {accordions.map((s) => (
+        <Accordion key={s.heading} label={s.heading}>
+          <Markdown>{s.content}</Markdown>
+        </Accordion>
+      ))}
+    </>
   )
 }
 
@@ -231,6 +303,12 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
         )}
       </div>
 
+      {tape.note && (
+        <div className="tape-note">
+          <Markdown>{tape.note}</Markdown>
+        </div>
+      )}
+
       <div className="tape-section-head">
         <span className="section-label">Tracklist — all {tracks.length} demos</span>
         <div className="section-line" />
@@ -297,23 +375,7 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
             iframeRef={(el) => { iframeRefs.current[i] = el }}
           />
 
-          {track.whatTheyBuilt && track.whatTheyBuilt.length > 0 && (
-            <div className="demo-summary-box">
-              <div className="summary-head">what they built</div>
-              <ul className="summary-bullets">
-                {track.whatTheyBuilt.map((point, j) => (
-                  <li key={j}>{point}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {track.whyYouShouldCare && (
-            <div className="why-matters">
-              <div className="why-label">why you should care</div>
-              <div className="why-text">{track.whyYouShouldCare}</div>
-            </div>
-          )}
+          {track.description && <TrackDescription description={track.description} />}
 
           {track.screenshots && track.screenshots.length > 0 && (
             <div className="screenshot-grid">
