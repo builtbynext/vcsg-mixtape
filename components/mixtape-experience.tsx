@@ -99,7 +99,7 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
   return (
     <>
       <div className="tape-hero">
-        <div className="tape-eyebrow">Tape {tape.tapeNumber} · Side {tape.side}</div>
+        <div className="tape-eyebrow">Vol. {tape.tapeNumber}</div>
         <h1 className="tape-title">{tape.title}</h1>
         <div className="tape-meta">
           {tape.date && <span>{formatTapeDate(tape.date)}</span>}
