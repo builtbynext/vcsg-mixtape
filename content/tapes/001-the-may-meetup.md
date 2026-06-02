@@ -123,7 +123,7 @@ tracks:
       - name: Wondo Jeong
         url: https://www.linkedin.com/in/wondojeong/
     builderLinkedinUrl: 
-    builderWebsiteUrl: usehandmade.com
+    builderWebsiteUrl: https://usehandmade.com
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: https://x.com/rezailmi
