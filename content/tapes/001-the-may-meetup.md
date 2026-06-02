@@ -503,7 +503,7 @@ This project is a design tool that runs directly on top of React applications, a
 
 Reza, a designer bridging design and engineering, noticed that traditional design tools like Figma were mainly used for collaboration and whiteboarding rather than building assets engineers could directly use. Engineers began designing in their own ways, showcasing directly to users, which changed the design process.
 
-To address this, the presenter and a pure designer collaborator created an open-source NPM package that adds direct manipulation tools to React projects. They aimed to make it easier for designers—who may not be comfortable installing packages—to use these tools by building a Mac app and cloud integration.
+To address this, Reza and Wondo created an open-source NPM package that adds direct manipulation tools to React projects. They aimed to make it easier for designers—who may not be comfortable installing packages—to use these tools by building a Mac app and cloud integration.
 
 The goal was to improve the solution design phase by enabling designers to work visually on real app code, reducing the gap between design and engineering workflows.
 
