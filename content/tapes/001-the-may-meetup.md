@@ -545,4 +545,4 @@ The team also experimented with timeline-based interfaces for complex animations
 
 ## The Recap
 
-Ten builders, ten very different ideas across iOS, OpenClaw, Parking, Accessibility Tech, DesignerOps Tooling and more. The most cosy demo night yet. ✨
+Ten builders, ten very different ideas across iOS, OpenClaw, Parking Tech, Accessibility Tech, DesignOps Tooling and more. The most cosy demo night yet ✨
