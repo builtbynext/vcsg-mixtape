@@ -118,21 +118,21 @@ tracks:
     youtubeId: 1Rr8E74d3k8
     duration: "11:41"
     builderLinkedinUrl: https://www.linkedin.com/in/rezailmi/
-    builderWebsiteUrl: https://rezailmi.com/
+    builderWebsiteUrl: usehandmade.com
     builderInstagramUrl: ""
     builderTiktokUrl: ""
-    builderXUrl: https://twitter.com/
+    builderXUrl: https://x.com/rezailmi
 ---
 
 ## Nexus
 
 ### What it is
 
-The presenter describes a personal infrastructure management system powered by about 13 to 14 open-source agents that automate and manage various self-hosted services and operations.
+Ilia describes a personal infrastructure management system powered by about 13 to 14 open-source agents that automate and manage various self-hosted services and operations.
 
 ### Why this was made
 
-The presenter, a Chief Information Security Officer (CISO) and self-hosting enthusiast, built this system to replace manual server management, configuration files, and complex setups. Managing multiple self-hosted replacements for common services like Google Photos and Canva became cumbersome and error-prone.
+Ilia, a Chief Information Security Officer (CISO) and self-hosting enthusiast, built this system to replace manual server management, configuration files, and complex setups. Managing multiple self-hosted replacements for common services like Google Photos and Canva became cumbersome and error-prone.
 The system was created to automate infrastructure tasks, proactively identify and fix issues, and handle operations without constant manual intervention. It reflects the presenter's long experience in cybersecurity and system architecture, aiming to streamline infrastructure management for someone with technical knowledge.
 
 ### Why this matters
@@ -144,7 +144,7 @@ Vibecoding enabled the presenter to build and coordinate multiple agents that co
 
 ### How it works
 
-The presenter interacts with a key agent called Nexus via Discord, giving it instructions about new apps or infrastructure changes. Nexus then asks clarifying questions, plans the work, and delegates tasks to other agents. These agents handle everything from building and running services to auditing and repairing issues.
+Ilia interacts with a key agent called Nexus via Discord, giving it instructions about new apps or infrastructure changes. Nexus then asks clarifying questions, plans the work, and delegates tasks to other agents. These agents handle everything from building and running services to auditing and repairing issues.
 All operations are logged and securely stored, including secrets like passwords and API keys. The system can handle quick prototypes or critical infrastructure tasks, with human oversight to approve important decisions and maintain control.
 
 ### Try This
@@ -191,7 +191,7 @@ A beginner can try using a tool like NotebookLM to store their project notes and
 
 ### Under the hood
 
-The presenter utilizes a complex stack of AI agents and custom scripts to manage development. He uses Pico (transcribed as "P code" or "PI code") to connect various tools and create custom extensions, specifically to access a model he identifies as GPT-5.5 (transcribed as "GP 5.5s"). For coding, he employs a loop combining Claude (transcribed as "plot") and Aider (transcribed as "OS") to automatically resolve pull request issues.
+Raynard and May Yee utilizes a complex stack of AI agents and custom scripts to manage development. He uses Pico (transcribed as "P code" or "PI code") to connect various tools and create custom extensions, specifically to access a model he identifies as GPT-5.5 (transcribed as "GP 5.5s"). For coding, he employs a loop combining Claude (transcribed as "plot") and Aider (transcribed as "OS") to automatically resolve pull request issues.
 
   * **Custom Context Sync**: The presenter uses a tool called ENTR to run a script that automatically syncs markdown files from a local folder to Google Drive, which then feeds into NotebookLM.
   * **Codebase Layering**: To manage context efficiently, he uses Graphify to layer his codebase lookups and Tree-sitter to parse code structures.
@@ -335,9 +335,9 @@ A motorcycle parking app designed for riders in Singapore that helps users find 
 
 ### Why this was made
 
-The presenter, Kai, a motorcycle rider himself, experienced frustration with existing parking apps in Singapore that poorly support motorcycles. Despite many apps for car parking, none provide clear, accessible, or current information for motorcycle parking, treating motorcyclists as second-class users.
+Kai Wei, a motorcycle rider himself, experienced frustration with existing parking apps in Singapore that poorly support motorcycles. Despite many apps for car parking, none provide clear, accessible, or current information for motorcycle parking, treating motorcyclists as second-class users.
 
-Kai wanted a simple, user-friendly solution that shows motorcycle parking locations and updates dynamically. Since official sources like LTA and URA do not provide reliable or current motorcycle parking data, he manually collected and filtered data, sometimes using AI to assist, to build a functional app.
+Kai Wei wanted a simple, user-friendly solution that shows motorcycle parking locations and updates dynamically. Since official sources like LTA and URA do not provide reliable or current motorcycle parking data, he manually collected and filtered data, sometimes using AI to assist, to build a functional app.
 
 ### Why this matters
 
@@ -358,7 +358,7 @@ If you ride a motorcycle, try noting down or sharing information about parking s
 
 ### Under the hood
 
-Kai used Claude Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore's motorcyclists.
+Kai Wei used Claude Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore's motorcyclists.
 
 Key challenges include verifying crowdsourced data and categorizing parking spots into public, private, special-use (like Grab delivery rider spots), and unofficial parking areas. Kai is exploring ways to handle these categories responsibly, especially unofficial spots that might carry liability risks.
 
@@ -376,7 +376,7 @@ cancheck is a web-based social assistance matching tool designed to help people 
 
 ### Why this was made
 
-The presenter, a design strategist, was inspired by conversations with his partner, a new social worker, who highlighted the difficulty clients face in finding appropriate social assistance. Despite her experience in other fields, she found resourcing challenging in social work. Motivated to solve this problem, the presenter created cancheck as a passion project to simplify access to social aid.
+Saiful, a design strategist, was inspired by conversations with his partner, a new social worker, who highlighted the difficulty clients face in finding appropriate social assistance. Despite his experience in other fields, he found resourcing challenging in social work. Motivated to solve this problem, the presenter created cancheck as a passion project to simplify access to social aid.
 
 The project also served as a personal challenge for the presenter to apply his problem-solving skills practically, beyond teaching design strategy and innovation. He documented the entire process to share insights and demonstrate his capability to execute a project end-to-end.
 
@@ -397,7 +397,7 @@ Try breaking down a complex problem into simple questions that guide users to so
 
 ### Under the hood
 
-The presenter built cancheck using no-code tools, primarily Claude Max and Notion for content management, and deployed it on Vercel for hosting and tracking. He did not write or review any code himself, relying entirely on no-code platforms.
+Saiful built cancheck using no-code tools, primarily Claude Max and Notion for content management, and deployed it on Vercel for hosting and tracking. He did not write or review any code himself, relying entirely on no-code platforms.
 
 Notable decisions include:
 * Using simple, primary school-level language for all assistance schemes to ensure accessibility.
@@ -419,7 +419,7 @@ Ray is a wearable device combining hardware and software designed to assist visu
 
 ### Why this was made
 
-The presenter noticed that around 280 million people worldwide lack access to dedicated devices to assist with visual impairment. Motivated by this gap, they created Ray during a hackathon in under 12 hours to provide a practical aid combining hardware and AI software. The project aims to support visually impaired users in everyday situations, such as identifying products in a supermarket or recognizing people, while also offering safety features like emergency calls and location assistance.
+Freddy noticed that around 280 million people worldwide lack access to dedicated devices to assist with visual impairment. Motivated by this gap, they created Ray during a hackathon in under 12 hours to provide a practical aid combining hardware and AI software. The project aims to support visually impaired users in everyday situations, such as identifying products in a supermarket or recognizing people, while also offering safety features like emergency calls and location assistance.
 
 ### Why this matters
 
@@ -438,7 +438,7 @@ Try imagining how a wearable device could help you by describing objects around 
 
 ### Under the hood
 
-The presenter built Ray using a combination of hardware components: a camera, bone conduction audio device, and microphone. The software includes AI models for object and face recognition, with plans to improve face recognition to help users identify friends. The presenter considered using a Raspberry Pi with camera modules but noted aesthetic and latency challenges. They also plan to collaborate with Interbio Technologies and support AI voice customization, including a Singlish accent for better user understanding.
+Freddy built Ray using a combination of hardware components: a camera, bone conduction audio device, and microphone. The software includes AI models for object and face recognition, with plans to improve face recognition to help users identify friends. He also considered using a Raspberry Pi with camera modules but noted aesthetic and latency challenges. They also plan to collaborate with Interbio Technologies and support AI voice customization, including a Singlish accent for better user understanding.
 
 ### Suggestions for your own projects:
 
@@ -496,7 +496,7 @@ This project is a design tool that runs directly on top of React applications, a
 
 ### Why this was made
 
-The presenter, a designer bridging design and engineering, noticed that traditional design tools like Figma were mainly used for collaboration and whiteboarding rather than building assets engineers could directly use. Engineers began designing in their own ways, showcasing directly to users, which changed the design process.
+Reza, a designer bridging design and engineering, noticed that traditional design tools like Figma were mainly used for collaboration and whiteboarding rather than building assets engineers could directly use. Engineers began designing in their own ways, showcasing directly to users, which changed the design process.
 
 To address this, the presenter and a pure designer collaborator created an open-source NPM package that adds direct manipulation tools to React projects. They aimed to make it easier for designers—who may not be comfortable installing packages—to use these tools by building a Mac app and cloud integration.
 
