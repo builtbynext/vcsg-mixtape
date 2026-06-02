@@ -36,7 +36,7 @@ tracks:
         url: https://linkedin.com/in/may-yee-lai
     builderWebsiteUrl:  https://dojojojo.com/
     builderInstagramUrl: https://www.instagram.com/official.dojojojo/
-    builderTiktokUrl: https://www.instagram.com/official.dojojojo/
+    builderTiktokUrl: https://www.tiktok.com/@official.dojojojo
     builderXUrl: ""
 
   - name: Senior Says
@@ -68,7 +68,7 @@ tracks:
     youtubeId: pvLO1iWS4vo
     duration: "12:26"
     builderLinkedinUrl: https://www.linkedin.com/in/chesterhow/
-    builderWebsiteUrl: https://www.linkedin.com/pulse/things-take-time-chester-how-zjelc/
+    builderWebsiteUrl: https://apps.apple.com/us/app/things-take-time-logbook/id6758779782
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: https://x.com/itsnotchester?s=20
