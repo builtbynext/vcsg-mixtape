@@ -25,29 +25,29 @@ function normalizeScreenshots(raw: unknown): Screenshot[] {
 function normalizeTrack(raw: unknown): Track {
   const t = (raw ?? {}) as Record<string, unknown>
 
-  let whatTheyBuilt: string[] | undefined
-  if (Array.isArray(t.whatTheyBuilt)) {
-    whatTheyBuilt = t.whatTheyBuilt.map(String)
-  } else if (typeof t.whatTheyBuilt === "string" && t.whatTheyBuilt.trim()) {
-    whatTheyBuilt = t.whatTheyBuilt
-      .split("\n")
-      .map((l) => l.replace(/^[-*]\s*/, "").trim())
-      .filter(Boolean)
-  }
-
   const screenshots = normalizeScreenshots(t.screenshots)
+
+  const linkedinUrls = Array.isArray(t.builderLinkedinUrls)
+    ? (t.builderLinkedinUrls as unknown[])
+        .map((e) => {
+          const entry = (e ?? {}) as Record<string, unknown>
+          return { name: String(entry.name ?? ""), url: String(entry.url ?? "") }
+        })
+        .filter((e) => e.url)
+    : []
 
   return {
     name: String(t.name ?? ""),
     builder: String(t.builder ?? ""),
     builderLinkedinUrl: t.builderLinkedinUrl ? String(t.builderLinkedinUrl) : undefined,
+    builderLinkedinUrls: linkedinUrls.length ? linkedinUrls : undefined,
     builderWebsiteUrl: t.builderWebsiteUrl ? String(t.builderWebsiteUrl) : undefined,
     builderInstagramUrl: t.builderInstagramUrl ? String(t.builderInstagramUrl) : undefined,
+    builderXUrl: t.builderXUrl ? String(t.builderXUrl) : undefined,
+    builderTiktokUrl: t.builderTiktokUrl ? String(t.builderTiktokUrl) : undefined,
     youtubeId: t.youtubeId ? String(t.youtubeId) : undefined,
     youtubeStartTime: typeof t.youtubeStartTime === "number" ? t.youtubeStartTime : undefined,
     duration: t.duration ? String(t.duration) : undefined,
-    whatTheyBuilt,
-    whyYouShouldCare: t.whyYouShouldCare ? String(t.whyYouShouldCare) : undefined,
     screenshots: screenshots.length ? screenshots : undefined,
   }
 }

@@ -7,13 +7,14 @@ export interface Track {
   name: string
   builder: string
   builderLinkedinUrl?: string
+  builderLinkedinUrls?: { name: string; url: string }[]
   builderWebsiteUrl?: string
   builderInstagramUrl?: string
+  builderXUrl?: string
+  builderTiktokUrl?: string
   youtubeId?: string
   youtubeStartTime?: number
   duration?: string
-  whatTheyBuilt?: string[]
-  whyYouShouldCare?: string
   description?: string
   screenshots?: Screenshot[]
 }

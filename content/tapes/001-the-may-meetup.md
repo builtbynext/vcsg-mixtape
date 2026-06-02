@@ -7,8 +7,8 @@ location: LorongAI @ 22 Cross
 locationUrl: https://lorong.ai/
 curator: Stewart
 curatorUrl: https://linkedin.com/in/stewartsg
-decoder: Wei Rong
-decoderUrl: https://www.twitch.tv/carillus
+decoder: Carillus
+decoderUrl: https://x.com/_carillus
 runtime: 1h 38m
 builders: 10
 inTheRoom: 29
@@ -19,84 +19,109 @@ tracks:
     builder: ilia
     youtubeId: CMSr3IxtPRk
     duration: "07:08"
-    whatTheyBuilt:
-      - An app that solves a real problem in under a weekend
-    whyYouShouldCare: >-
-      Proof that scope discipline is the most underrated skill in vibe coding.
+    builderLinkedinUrl: https://www.linkedin.com/in/tivin/
+    builderWebsiteUrl: ""
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Dojojojo
     builder: Reynard + May Yee
     youtubeId: lr0MXPg4V6Y
     duration: "08:12"
-    whatTheyBuilt:
-      - A tool that automates a painful manual workflow
-    whyYouShouldCare: >-
-      The automation is simple but the time saved is real.
+    builderLinkedinUrls:
+      - name: Reynard
+        url: https://linkedin.com/in/reynard-lee-a700a39b
+      - name: May Yee
+        url: https://linkedin.com/in/may-yee-lai
+    builderWebsiteUrl:  https://dojojojo.com/
+    builderInstagramUrl: https://www.instagram.com/official.dojojojo/
+    builderTiktokUrl: https://www.instagram.com/official.dojojojo/
+    builderXUrl: ""
+
   - name: Senior Says
     builder: Kay T + Pradnya
     youtubeId: jJE-kTBoLOo
     duration: "09:52"
-    whatTheyBuilt:
-      - A collaborative project between two builders
-      - Showed how pair vibe coding changes the dynamic
-    whyYouShouldCare: >-
-      Two builders, one idea. Watch how they divided the problem.
+    builderLinkedinUrls:
+      - name: Kay T
+        url: https://www.linkedin.com/in/kaytttt/
+      - name: Pradnya
+        url: https://www.linkedin.com/in/pradnya-nir-uxer-coder/
+    builderWebsiteUrl: https://www.community-hackathon.gov.sg/2025/seniorsays/
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Joodle
     builder: Yuxuan
     youtubeId: H5-qtYMQzZY
     duration: "10:58"
-    whatTheyBuilt:
-      - A personal productivity tool shipped live
-    whyYouShouldCare: >-
-      Built for a specific personal pain — and it shows.
+    builderLinkedinUrl: https://www.linkedin.com/in/li-yuxuan/ 
+    builderWebsiteUrl: https://liyuxuan.dev/apps/joodle 
+    builderInstagramUrl: https://www.instagram.com/joodlejournaling
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Things Take Time
     builder: Chester
     youtubeId: pvLO1iWS4vo
     duration: "12:26"
-    whatTheyBuilt:
-      - The longest demo of the night
-      - A complex system explained clearly
-    whyYouShouldCare: >-
-      Worth every minute. The depth here is rare for a meetup demo.
+    builderLinkedinUrl: https://www.linkedin.com/in/chesterhow/
+    builderWebsiteUrl: https://www.linkedin.com/pulse/things-take-time-chester-how-zjelc/
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: https://x.com/itsnotchester?s=20
+
   - name: Parking by EigenMoto
     builder: Kai Wei
     youtubeId: xeSug3RhySk
     duration: "11:43"
-    whatTheyBuilt:
-      - A parking solution built with EigenMoto
-    whyYouShouldCare: >-
-      Real-world infrastructure problem, vibe coded solution.
+    builderLinkedinUrl: https://www.linkedin.com/in/kohkaiwei/
+    builderWebsiteUrl: https://parking.eigenmoto.com/
+    builderInstagramUrl: https://www.instagram.com/eigenmoto
+    builderTiktokUrl: https://www.tiktok.com/@eigenmoto
+    builderXUrl: ""
+
   - name: Can Check
     builder: Saiful
     youtubeId: S4NtH3hRFGo
     duration: "08:18"
-    whatTheyBuilt:
-      - A checking tool that simplifies a repetitive process
-    whyYouShouldCare: >-
-      Simple premise, immediate utility.
+    builderLinkedinUrl: https://www.linkedin.com/in/saifulanuarsg/
+    builderWebsiteUrl: https://cancheck.co/
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Aid for the blind
     builder: Freddy
     youtubeId: E86PG3mDFK4
     duration: "09:41"
-    whatTheyBuilt:
-      - An accessibility tool for the visually impaired
-    whyYouShouldCare: >-
-      Tech that actually matters — built for people who need it most.
+    builderLinkedinUrl: https://www.linkedin.com/in/bboxfred/
+    builderWebsiteUrl: ""
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Grunt work to Impactful work
     builder: Cheryl
     youtubeId: Ix5D7msnuzk
     duration: "08:16"
-    whatTheyBuilt:
-      - A tool that transforms tedious work into meaningful output
-    whyYouShouldCare: >-
-      The best demos make you rethink how you spend your time.
+    builderLinkedinUrl: https://www.linkedin.com/in/cherylwonguxd/
+    builderWebsiteUrl: ""
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: ""
+
   - name: Handmade
     builder: Reza
     youtubeId: 1Rr8E74d3k8
     duration: "11:41"
-    whatTheyBuilt:
-      - A handcrafted project by two builders
-    whyYouShouldCare: >-
-      Two perspectives, one cohesive product.
+    builderLinkedinUrl: https://www.linkedin.com/in/rezailmi/
+    builderWebsiteUrl: https://rezailmi.com/
+    builderInstagramUrl: ""
+    builderTiktokUrl: ""
+    builderXUrl: https://twitter.com/
 ---
 
 ## Nexus
@@ -108,7 +133,7 @@ The presenter describes a personal infrastructure management system powered by a
 ### Why this was made
 
 The presenter, a Chief Information Security Officer (CISO) and self-hosting enthusiast, built this system to replace manual server management, configuration files, and complex setups. Managing multiple self-hosted replacements for common services like Google Photos and Canva became cumbersome and error-prone.
-The system was created to automate infrastructure tasks, proactively identify and fix issues, and handle operations without constant manual intervention. It reflects the presenter’s long experience in cybersecurity and system architecture, aiming to streamline infrastructure management for someone with technical knowledge.
+The system was created to automate infrastructure tasks, proactively identify and fix issues, and handle operations without constant manual intervention. It reflects the presenter's long experience in cybersecurity and system architecture, aiming to streamline infrastructure management for someone with technical knowledge.
 
 ### Why this matters
 
@@ -191,7 +216,7 @@ This project is a voice-enabled digital form system designed to help volunteers 
 
 The creators identified that volunteer work in senior care is often manual and inefficient, relying heavily on memory and paper records. This made tracking and updating information difficult and time-consuming. They wanted to simplify this process by automating data capture during house visits to reduce the burden on volunteers.
 
-The project originated from the team’s own experience working with seniors, many of whom are volunteers themselves, and recognizing the challenges they faced in managing information. They aimed to create a tool that could be easily accessed and used by volunteers to improve their workflow.
+The project originated from the team's own experience working with seniors, many of whom are volunteers themselves, and recognizing the challenges they faced in managing information. They aimed to create a tool that could be easily accessed and used by volunteers to improve their workflow.
 
 ### Why this matters
 
@@ -210,7 +235,7 @@ Try recording a simple conversation on your phone and then use a free transcript
 
 ### Under the hood
 
-The team initially built an app but switched to a website for better accessibility. They used OpenAI’s Whisper model for audio transcription, which supports multiple languages including Chinese, with ongoing work to improve Tamil and Malay recognition. They combined different large language models (LLMs) and APIs to structure the data and generate smart summaries.
+The team initially built an app but switched to a website for better accessibility. They used OpenAI's Whisper model for audio transcription, which supports multiple languages including Chinese, with ongoing work to improve Tamil and Malay recognition. They combined different large language models (LLMs) and APIs to structure the data and generate smart summaries.
 
 They also explored scanning and converting handwritten paper forms into digital text to handle existing records. The use of Cursor (a low-code platform) helped speed up development and iteration.
 
@@ -234,7 +259,7 @@ The goal is to build a collection of 365 personal doodles over a year, making it
 ### Why this matters
 
 * Visual journaling offers a simple, engaging alternative to text-heavy diaries, lowering the barrier to daily reflection.
-* The app integrates with Apple’s ecosystem (widgets, live activities), making the journaling experience seamless and accessible.
+* The app integrates with Apple's ecosystem (widgets, live activities), making the journaling experience seamless and accessible.
 * Sharing features allow users to easily post their doodles on social media, encouraging community and motivation.
 * Vibecoding enabled rapid prototyping and integrating interactive features like animations and widgets without heavy coding.
 
@@ -242,7 +267,7 @@ The goal is to build a collection of 365 personal doodles over a year, making it
 
 Users draw a quick doodle each day and add a small note describing the moment. The app stores these drawings in a grid view, letting users scroll through their year visually. Tapping a doodle plays an animation of the drawing process, enhancing the memory recall. Widgets show recent or random doodles on the home screen for quick access.
 
-The app also includes templates for sharing doodles with or without notes, and users can customize colors and designs. A camera tracing feature helps users start a drawing by tracing a photo if they don’t know what to draw.
+The app also includes templates for sharing doodles with or without notes, and users can customize colors and designs. A camera tracing feature helps users start a drawing by tracing a photo if they don't know what to draw.
 
 ### Try This
 
@@ -252,9 +277,9 @@ Try drawing a simple doodle about your day and add a short note - it's a great w
 
 Yuxuan built the app for the Apple ecosystem, using widgets and live activities to display doodles outside the app. The app animates drawings by replaying the strokes, adding a dynamic element to the journal entries.
 
-An interactive tutorial guides users through the app’s features. It uses a system where each UI element has an ID, and tutorial steps have start and end conditions defined in a JSON-like structure. This allows the tutorial to respond to user actions, such as tapping buttons or dismissing screens, making onboarding smoother.
+An interactive tutorial guides users through the app's features. It uses a system where each UI element has an ID, and tutorial steps have start and end conditions defined in a JSON-like structure. This allows the tutorial to respond to user actions, such as tapping buttons or dismissing screens, making onboarding smoother.
 
-Challenges included optimizing performance to keep the UI smooth with many images and navigating Apple’s app store policies.
+Challenges included optimizing performance to keep the UI smooth with many images and navigating Apple's app store policies.
 
 ### Suggestions for your own projects:
 
@@ -318,8 +343,8 @@ Kai wanted a simple, user-friendly solution that shows motorcycle parking locati
 
 - Motorcyclists in Singapore lack good digital tools for parking, causing inconvenience and wasted time.  
 - Existing data sources are outdated or incomplete, making it hard to rely on official channels.  
-- AI tools enabled rapid development of the app’s infrastructure, allowing Kai to focus on solving the core problem of data accuracy and user experience.  
-- Crowdsourcing data from motorcyclists helps keep the app’s information current, addressing a gap that traditional data providers do not fill.
+- AI tools enabled rapid development of the app's infrastructure, allowing Kai to focus on solving the core problem of data accuracy and user experience.  
+- Crowdsourcing data from motorcyclists helps keep the app's information current, addressing a gap that traditional data providers do not fill.
 
 ### How it works
 
@@ -333,7 +358,7 @@ If you ride a motorcycle, try noting down or sharing information about parking s
 
 ### Under the hood
 
-Kai used Claude Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore’s motorcyclists.
+Kai used Claude Code and a UI library called Get Shit Done Redux (transcribed as "Get Shit Done") to build the app quickly. AI was employed to write parts of the web app and set up data collection workflows. The app is designed to be low-cost and scalable, aiming to serve most of Singapore's motorcyclists.
 
 Key challenges include verifying crowdsourced data and categorizing parking spots into public, private, special-use (like Grab delivery rider spots), and unofficial parking areas. Kai is exploring ways to handle these categories responsibly, especially unofficial spots that might carry liability risks.
 
@@ -359,7 +384,7 @@ The project also served as a personal challenge for the presenter to apply his p
 
 * Finding social assistance resources is a common and stressful problem for both social workers and clients.
 * cancheck makes resource matching accessible by simplifying the search and tailoring results to user behavior.
-* The tool’s user-centric design, including clear language and easy-to-share information, lowers barriers for users unfamiliar with complex systems.
+* The tool's user-centric design, including clear language and easy-to-share information, lowers barriers for users unfamiliar with complex systems.
 * Vibecoding and no-code tools enabled the presenter to build and iterate the project quickly without deep programming knowledge.
 
 ### How it works
@@ -368,7 +393,7 @@ cancheck asks users three simple questions about their situation and location. B
 
 ### Try This
 
-Try breaking down a complex problem into simple questions that guide users to solutions. For example, create a basic form that asks about a user’s needs and location, then show tailored resources or advice based on their answers.
+Try breaking down a complex problem into simple questions that guide users to solutions. For example, create a basic form that asks about a user's needs and location, then show tailored resources or advice based on their answers.
 
 ### Under the hood
 
@@ -425,13 +450,13 @@ The presenter built Ray using a combination of hardware components: a camera, bo
 
 ### What it is
 
-Cheryl’s project is an AI-powered workflow assistant that automates the review of business application licenses for the Singapore government. It acts like a virtual intern, handling repetitive tasks to save time for the license reviewer.
+Cheryl's project is an AI-powered workflow assistant that automates the review of business application licenses for the Singapore government. It acts like a virtual intern, handling repetitive tasks to save time for the license reviewer.
 
 ### Why this was made
 
-Cheryl’s workload doubled from reviewing three to seven licenses per week, increasing her time spent from ten hours to much more. Unable to get human help like an intern, she decided to build an AI-based solution herself. The goal was to reduce the manual effort involved in reviewing licenses and preparing reports for stakeholders.
+Cheryl's workload doubled from reviewing three to seven licenses per week, increasing her time spent from ten hours to much more. Unable to get human help like an intern, she decided to build an AI-based solution herself. The goal was to reduce the manual effort involved in reviewing licenses and preparing reports for stakeholders.
 
-This project arose from Cheryl’s personal need to manage increased workload efficiently. It streamlines the front-end work of license review so she can focus on higher-impact tasks.
+This project arose from Cheryl's personal need to manage increased workload efficiently. It streamlines the front-end work of license review so she can focus on higher-impact tasks.
 
 ### Why this matters
 
@@ -452,9 +477,9 @@ Try breaking down a repetitive task you do regularly into smaller steps. Then im
 
 ### Under the hood
 
-Cheryl used a tool called Claude to build the AI sub-agents and define "skills," which are instructions guiding each sub-agent’s actions. She learned how to create these skills by asking Claude itself for help, showing an interactive, self-teaching approach.
+Cheryl used a tool called Claude to build the AI sub-agents and define "skills," which are instructions guiding each sub-agent's actions. She learned how to create these skills by asking Claude itself for help, showing an interactive, self-teaching approach.
 
-The agents handle tasks like counting license volumes, filling form fields row by row, calculating time saved, and generating annotated PDFs. The workflow is private and hosted internally, tailored specifically for Cheryl’s license review role in the Singapore government.
+The agents handle tasks like counting license volumes, filling form fields row by row, calculating time saved, and generating annotated PDFs. The workflow is private and hosted internally, tailored specifically for Cheryl's license review role in the Singapore government.
 
 ### Suggestions for your own projects:
 
@@ -486,7 +511,7 @@ The goal was to improve the solution design phase by enabling designers to work 
 
 ### How it works
 
-The tool connects to a React project either from GitHub or a local folder. It detects the project’s framework and dependencies, installs what’s needed, and runs the app automatically.
+The tool connects to a React project either from GitHub or a local folder. It detects the project's framework and dependencies, installs what's needed, and runs the app automatically.
 
 Designers can switch the app into a "canvas mode" where they see rulers and can measure distances, adjust sizes, move elements, and edit styles visually. Changes are linked back to the exact lines of code that need editing.
 
@@ -515,5 +540,4 @@ The team also experimented with timeline-based interfaces for complex animations
 
 ## The Recap
 
-Ten builders, ten very different ideas. The most varied night yet.
-
+Ten builders, ten very different ideas across iOS, OpenClaw, Parking, Accessibility Tech, DesignerOps Tooling and more. The most cosy demo night yet. ✨

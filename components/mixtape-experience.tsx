@@ -41,6 +41,22 @@ function GlobeIcon() {
   )
 }
 
+function XIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </svg>
+  )
+}
+
+function TiktokIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/>
+    </svg>
+  )
+}
+
 function InstagramIcon() {
   return (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -49,17 +65,80 @@ function InstagramIcon() {
   )
 }
 
+function LinkedInButton({ track }: { track: Track }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!open) return
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener("mousedown", handler)
+    return () => document.removeEventListener("mousedown", handler)
+  }, [open])
+
+  const multi = track.builderLinkedinUrls
+  const single = track.builderLinkedinUrl
+
+  if (multi && multi.length > 0) {
+    return (
+      <div className="builder-link-popover-wrap" ref={ref}>
+        <button
+          type="button"
+          className="builder-link-icon"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="LinkedIn profiles"
+          aria-expanded={open}
+        >
+          <LinkedInIcon />
+        </button>
+        {open && (
+          <div className="builder-link-popover">
+            {multi.map((entry) => (
+              <a
+                key={entry.url}
+                href={entry.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="builder-link-popover-item"
+                onClick={() => setOpen(false)}
+              >
+                <LinkedInIcon />
+                <span>{entry.name}</span>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  if (single) {
+    return (
+      <a href={single} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="builder-link-icon">
+        <LinkedInIcon />
+      </a>
+    )
+  }
+
+  return null
+}
+
 function BuilderLinks({ track }: { track: Track }) {
   const links = [
-    track.builderLinkedinUrl && { href: track.builderLinkedinUrl, icon: <LinkedInIcon />, label: "LinkedIn" },
-    track.builderWebsiteUrl && { href: track.builderWebsiteUrl, icon: <GlobeIcon />, label: "Website" },
-    track.builderInstagramUrl && { href: track.builderInstagramUrl, icon: <InstagramIcon />, label: "Instagram" },
-  ].filter(Boolean) as { href: string; icon: React.ReactNode; label: string }[]
+    { href: track.builderWebsiteUrl, icon: <GlobeIcon />, label: "Website" },
+    { href: track.builderInstagramUrl, icon: <InstagramIcon />, label: "Instagram" },
+    { href: track.builderTiktokUrl, icon: <TiktokIcon />, label: "TikTok" },
+    { href: track.builderXUrl, icon: <XIcon />, label: "X" },
+  ].filter((l) => l.href)
 
-  if (!links.length) return null
+  const hasLinkedin = !!(track.builderLinkedinUrls?.length || track.builderLinkedinUrl)
+  if (!hasLinkedin && !links.length) return null
 
   return (
     <div className="builder-links">
+      <LinkedInButton track={track} />
       {links.map((l) => (
         <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" aria-label={l.label} className="builder-link-icon">
           {l.icon}
@@ -162,10 +241,16 @@ function parseDescriptionSections(md: string): { heading: string; content: strin
 function TrackDescription({ description }: { description: string }) {
   const sections = parseDescriptionSections(description)
   const visible = sections.filter((s) => ALWAYS_VISIBLE.includes(s.heading.toLowerCase()))
-  const accordions = sections.filter((s) => {
-    const lower = s.heading.toLowerCase()
-    return ACCORDION_SECTIONS.some((k) => lower.startsWith(k))
-  })
+  const accordions = sections
+    .filter((s) => {
+      const lower = s.heading.toLowerCase()
+      return ACCORDION_SECTIONS.some((k) => lower.startsWith(k))
+    })
+    .sort((a, b) => {
+      const aIsTry = a.heading.toLowerCase().startsWith("try this")
+      const bIsTry = b.heading.toLowerCase().startsWith("try this")
+      return aIsTry === bIsTry ? 0 : aIsTry ? 1 : -1
+    })
 
   return (
     <>
@@ -176,7 +261,10 @@ function TrackDescription({ description }: { description: string }) {
         </div>
       ))}
       {accordions.map((s) => (
-        <Accordion key={s.heading} label={s.heading}>
+        <Accordion
+          key={s.heading}
+          label={s.heading.toLowerCase().startsWith("try this") ? "Recommended to try" : s.heading}
+        >
           <Markdown>{s.content}</Markdown>
         </Accordion>
       ))}
