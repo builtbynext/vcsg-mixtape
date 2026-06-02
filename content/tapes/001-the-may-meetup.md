@@ -114,10 +114,15 @@ tracks:
     builderXUrl: ""
 
   - name: Handmade
-    builder: Reza
+    builder: Reza + Wondo
     youtubeId: 1Rr8E74d3k8
     duration: "11:41"
-    builderLinkedinUrl: https://www.linkedin.com/in/rezailmi/
+    builderLinkedinUrls:
+      - name: Reza Ilmi
+        url: https://www.linkedin.com/in/rezailmi/
+      - name: Wondo Jeong
+        url: https://www.linkedin.com/in/wondojeong/
+    builderLinkedinUrl: 
     builderWebsiteUrl: usehandmade.com
     builderInstagramUrl: ""
     builderTiktokUrl: ""
