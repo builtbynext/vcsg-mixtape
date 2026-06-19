@@ -182,13 +182,13 @@ They wanted to solve the problem of maintaining fitness motivation by combining 
 
 This project highlights how "vibecoding" allows individuals to build complex, integrated health and gaming systems that previously required large development teams.
 
-  * **Accessibility**: It demonstrates how a small team can integrate advanced features like pose tracking and AI-generated content without deep specialized knowledge.
+  * **Accessibility**: It demonstrates how a small team can integrate advanced features like pose tracking and micro-animations without deep specialized knowledge.
   * **Customization**: The presenter shows how developers can now create their own custom AI tools and extensions to optimize their specific personal workflows.
   * **Context Management**: It explores new ways to manage large amounts of project information, making it easier for solo creators to keep track of complex codebases.
 
 ### How it works
 
-The app uses a dual-interface approach where users can interact through a chat system to receive personalized fitness quests. It monitors physical activity by integrating motion-tracking models that follow a user's poses during workouts. All of the character art and pet images within the app are created using AI generation tools.
+Users grow their virtual pets by tracking their steps, nutrition and workout. They integrated motion-tracking models that follows a user's form during workouts. They integrated an AI coach to guide and help users better plan for their personalised health journey.
 
 ### Try This
 
@@ -196,7 +196,7 @@ A beginner can try using a tool like NotebookLM to store their project notes and
 
 ### Under the hood
 
-Raynard and May Yee utilizes a complex stack of AI agents and custom scripts to manage development. He uses Pico (transcribed as "P code" or "PI code") to connect various tools and create custom extensions, specifically to access a model he identifies as GPT-5.5 (transcribed as "GP 5.5s"). For coding, he employs a loop combining Claude (transcribed as "plot") and Aider (transcribed as "OS") to automatically resolve pull request issues.
+Reynard and May Yee utilizes a complex stack of AI agents and custom scripts to manage development. He uses Pico (transcribed as "P code" or "PI code") to connect various tools and create custom extensions, specifically to access a model he identifies as GPT-5.5 (transcribed as "GP 5.5s"). For coding, he employs a loop combining Claude (transcribed as "plot") and Aider (transcribed as "OS") to automatically resolve pull request issues.
 
   * **Custom Context Sync**: The presenter uses a tool called ENTR to run a script that automatically syncs markdown files from a local folder to Google Drive, which then feeds into NotebookLM.
   * **Codebase Layering**: To manage context efficiently, he uses Graphify to layer his codebase lookups and Tree-sitter to parse code structures.
