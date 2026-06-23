@@ -24,6 +24,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Dojojojo
     builder: Reynard + May Yee
@@ -38,6 +40,8 @@ tracks:
     builderInstagramUrl: https://www.instagram.com/official.dojojojo/
     builderTiktokUrl: https://www.tiktok.com/@official.dojojojo
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Senior Says
     builder: Kay T + Pradnya
@@ -52,6 +56,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Joodle
     builder: Yuxuan
@@ -62,6 +68,8 @@ tracks:
     builderInstagramUrl: https://www.instagram.com/joodlejournaling
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Things Take Time
     builder: Chester
@@ -72,6 +80,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: https://x.com/itsnotchester?s=20
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Parking by EigenMoto
     builder: Kai Wei
@@ -82,6 +92,8 @@ tracks:
     builderInstagramUrl: https://www.instagram.com/eigenmoto
     builderTiktokUrl: https://www.tiktok.com/@eigenmoto
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Can Check
     builder: Saiful
@@ -92,6 +104,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Aid for the blind
     builder: Freddy
@@ -102,6 +116,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Grunt work to Impactful work
     builder: Cheryl
@@ -112,6 +128,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 
   - name: Handmade
     builder: Reza + Wondo
@@ -127,6 +145,8 @@ tracks:
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: https://x.com/rezailmi
+    builderPatreonUrl: ""
+    builderSpotifyUrl: ""
 ---
 
 ## Nexus

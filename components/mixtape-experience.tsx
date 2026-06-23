@@ -57,6 +57,23 @@ function TiktokIcon() {
   )
 }
 
+function PatreonIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M15.386 0.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.613-3.864 8.613-8.613C24.004 4.4 20.14 0.524 15.386 0.524z" />
+      <path d="M0 0.658v22.682h3.15V0.658H0z" />
+    </svg>
+  )
+}
+
+function SpotifyIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.522 17.308a.748.748 0 0 1-1.028.272 14.548 14.548 0 0 0-5.404-1.984c-2.153-.256-4.066.14-5.702 1.183a.748.748 0 1 1-.744-1.298c1.842-1.09 4.012-1.535 6.414-1.267 2.025.24 3.894.92 5.556 2.022a.75.75 0 0 1 .272 1.028zm1.448-3.412a.937.937 0 0 1-1.293.341 11.433 11.433 0 0 0-6.354-1.876c-1.776-.21-3.352.115-4.687 1.007a.938.938 0 0 1-1.11-1.512c1.633-1.07 3.557-1.457 5.677-1.207 2.434.289 4.674 1.11 6.66 2.443a.937.937 0 0 1 .34 1.293zm.124-3.559a1.125 1.125 0 0 1-1.548.41 13.662 13.662 0 0 0-7.287-2.127c-2.125-.253-4.004.138-5.592 1.165a1.125 1.125 0 1 1-1.312-1.828c1.872-1.11 4.082-1.563 6.531-1.3 2.787.332 5.369 1.272 7.677 2.793a1.125 1.125 0 0 1 .41 1.548z" />
+    </svg>
+  )
+}
+
 function InstagramIcon() {
   return (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -131,6 +148,8 @@ function BuilderLinks({ track }: { track: Track }) {
     { href: track.builderInstagramUrl, icon: <InstagramIcon />, label: "Instagram" },
     { href: track.builderTiktokUrl, icon: <TiktokIcon />, label: "TikTok" },
     { href: track.builderXUrl, icon: <XIcon />, label: "X" },
+    { href: track.builderPatreonUrl, icon: <PatreonIcon />, label: "Patreon" },
+    { href: track.builderSpotifyUrl, icon: <SpotifyIcon />, label: "Spotify" },
   ].filter((l) => l.href)
 
   const hasLinkedin = !!(track.builderLinkedinUrls?.length || track.builderLinkedinUrl)
@@ -276,6 +295,27 @@ function sendYTCommand(iframe: HTMLIFrameElement | null | undefined, cmd: string
   iframe?.contentWindow?.postMessage(JSON.stringify({ event: "command", func: cmd, args: "" }), "*")
 }
 
+function isSameCreditPerson(
+  curator?: string,
+  decoder?: string,
+  curatorUrl?: string,
+  decoderUrl?: string,
+): boolean {
+  if (!curator || !decoder) return false
+  if (curator.trim().toLowerCase() === decoder.trim().toLowerCase()) return true
+  return Boolean(curatorUrl && decoderUrl && curatorUrl === decoderUrl)
+}
+
+function CreditName({ name, url }: { name: string; url?: string }) {
+  return url ? (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      {name}
+    </a>
+  ) : (
+    name
+  )
+}
+
 export function MixtapeExperience({ tape }: { tape: Tape }) {
   const { tracks } = tape
   const [activeIndex, setActiveIndex] = useState(0)
@@ -317,6 +357,13 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
     ...(tape.inTheRoom != null ? [{ label: "in the room", value: String(tape.inTheRoom) }] : []),
   ]
 
+  const sameCreditPerson = isSameCreditPerson(
+    tape.curator,
+    tape.decoder,
+    tape.curatorUrl,
+    tape.decoderUrl,
+  )
+
   return (
     <>
       <div className="tape-hero">
@@ -327,8 +374,37 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
           {tape.location && <><span className="dot">·</span><span>{tape.locationUrl ? <a href={tape.locationUrl} target="_blank" rel="noopener noreferrer">{tape.location}</a> : tape.location}</span></>}
           <span className="dot">·</span>
           <span>{tracks.length} demos</span>
-          {tape.curator && <><span className="dot">·</span><span>Curated by {tape.curatorUrl ? <a href={tape.curatorUrl} target="_blank" rel="noopener noreferrer">{tape.curator}</a> : tape.curator}</span></>}
-          {tape.decoder && <><span className="dot">·</span><span>Decoded by {tape.decoderUrl ? <a href={tape.decoderUrl} target="_blank" rel="noopener noreferrer">{tape.decoder}</a> : tape.decoder}</span></>}
+          {sameCreditPerson ? (
+            <>
+              <span className="dot">·</span>
+              <span>
+                Curated & decoded by{" "}
+                <CreditName
+                  name={tape.curator!}
+                  url={tape.curatorUrl ?? tape.decoderUrl}
+                />
+              </span>
+            </>
+          ) : (
+            <>
+              {tape.curator && (
+                <>
+                  <span className="dot">·</span>
+                  <span>
+                    Curated by <CreditName name={tape.curator} url={tape.curatorUrl} />
+                  </span>
+                </>
+              )}
+              {tape.decoder && (
+                <>
+                  <span className="dot">·</span>
+                  <span>
+                    Decoded by <CreditName name={tape.decoder} url={tape.decoderUrl} />
+                  </span>
+                </>
+              )}
+            </>
+          )}
         </div>
 
         <div className="tape-cassette">
