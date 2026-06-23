@@ -11,6 +11,7 @@ decoder: Stewart
 decoderUrl: https://linkedin.com/in/stewartsg
 runtime: 35m 25s
 builders: 7
+inTheRoom: 41
 color: c
 published: true
 tracks:
@@ -252,11 +253,11 @@ Pick one daily chore (calendar, budget, or booking) and wire a Telegram bot to h
 
 ### What it is
 
-Soft Garden is a digital floral arrangement experience inspired by the rituals and emotions of real-world flower arranging — a slow, quiet space where users compose bouquets from focal flowers, fillers, greenery, and accents, then harvest the result.
+Soft Garden is a digital floral arrangement platform inspired by the rituals and emotions of real-world flower arranging — a slow, quiet space where users compose bouquets from focal flowers, fillers, greenery, and accents, then harvest the result.
 
 ### Why this was made
 
-Celeste, a senior product designer at GIC, was burning out amid LinkedIn conversations about AI and productivity pressure. She signed up for a floral arrangement class with SkillsFuture credits and found something different from digital design: texture, movement, restraint, composition, and the feeling of time slowing down. She asked — if AI lowers the cost of creation, what becomes valuable? Speed, or beauty? Soft Garden explores whether software can be designed for feeling, not just productivity.
+Celeste, a senior product designer at GIC, was observing conversations on LinkedIn about AI, burnout etc and was getting very stressed out. She signed up for a floral arrangement class with SkillsFuture credits and found something different from digital design: texture, movement, restraint, composition, and the feeling of time slowing down. She asked — if AI lowers the cost of creation, what becomes valuable? Speed, or beauty? Soft Garden explores whether software can be designed for feeling, not just productivity.
 
 ### Why this matters
 
@@ -378,4 +379,4 @@ Attendees asked follow-up questions after each demo (Cassandra noted she would s
 
 ## The Recap
 
-Seven builders, seven very different vibes — from a personal agent OS and cozy journaling stitches to VTuber production dashboards, a Telegram lifestyle assistant, slow floral software, AI photo rescue, and a song-matching EP teaser. Just for the lulz, and somehow all of it useful.
+Seven builders, seven very different vibes — from an agentic Life OS, cozy journaling iOS App to VTuber production dashboards, a Telegram lifestyle assistant, digital floral arrangement platform, AI photo rescue, and an interactive song-matching app. Just for the lulz, and somehow all of it useful.
