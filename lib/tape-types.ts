@@ -14,6 +14,7 @@ export interface Track {
   builderTiktokUrl?: string
   builderPatreonUrl?: string
   builderSpotifyUrl?: string
+  builderYoutubeUrl?: string
   youtubeId?: string
   youtubeStartTime?: number
   duration?: string

@@ -26,6 +26,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Seasons
     builder: Cassandra
@@ -38,6 +39,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Video Creation Tool
     builder: Melvin
@@ -50,18 +52,20 @@ tracks:
     builderXUrl: "https://x.com/CarillusArt"
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Ami
     builder: Alifa
     youtubeId: "Vjwr3kifLLQ"
     duration: "05:31"
     builderLinkedinUrl: "https://www.linkedin.com/in/alifaputrinda/"
-    builderWebsiteUrl: "hellomillennials.com"
+    builderWebsiteUrl: "https://substack.com/@cooldownnotes"
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Soft Garden
     builder: Celeste
@@ -74,6 +78,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Vibe Coded Studio
     builder: Thu Ya
@@ -86,18 +91,20 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Play Me
     builder: Sasha
     youtubeId: "uRESbdEnokU"
     duration: "02:43"
-    builderLinkedinUrl: "www.linkedin.com/in/salima-nadira"
-    builderWebsiteUrl: "https://www.youtube.com/c/SashaMVs"
+    builderLinkedinUrl: "https://linkedin.com/in/salima-nadira"
+    builderWebsiteUrl: ""
     builderInstagramUrl: ""
     builderTiktokUrl: ""
     builderXUrl: ""
-    builderPatreonUrl: "www.patreon.com/sasashamusic"
+    builderPatreonUrl: "https://patreon.com/sasashamusic"
     builderSpotifyUrl: "https://open.spotify.com/artist/3Rg4OQYmAMECf2x1KUeHnd"
+    builderYoutubeUrl: "https://www.youtube.com/c/SashaMVs"
 
 ---
 

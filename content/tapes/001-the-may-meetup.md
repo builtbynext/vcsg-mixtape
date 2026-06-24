@@ -26,6 +26,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Dojojojo
     builder: Reynard + May Yee
@@ -42,6 +43,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Senior Says
     builder: Kay T + Pradnya
@@ -58,6 +60,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Joodle
     builder: Yuxuan
@@ -70,6 +73,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Things Take Time
     builder: Chester
@@ -82,6 +86,7 @@ tracks:
     builderXUrl: https://x.com/itsnotchester?s=20
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Parking by EigenMoto
     builder: Kai Wei
@@ -94,6 +99,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Can Check
     builder: Saiful
@@ -106,6 +112,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Aid for the blind
     builder: Freddy
@@ -118,6 +125,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Grunt work to Impactful work
     builder: Cheryl
@@ -130,6 +138,7 @@ tracks:
     builderXUrl: ""
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 
   - name: Handmade
     builder: Reza + Wondo
@@ -147,6 +156,7 @@ tracks:
     builderXUrl: https://x.com/rezailmi
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
+    builderYoutubeUrl: ""
 ---
 
 ## Nexus

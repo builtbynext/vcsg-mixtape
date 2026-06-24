@@ -19,7 +19,7 @@ export function TapeNav({ tapes }: { tapes: Tape[] }) {
         )}
         {prev && (
           <Link href={`/tapes/${prev.slug}`}>
-            Side {prev.side} · {formatTapeDate(prev.date)}
+            Event #{prev.side} – {formatTapeDate(prev.date)}
           </Link>
         )}
       </div>

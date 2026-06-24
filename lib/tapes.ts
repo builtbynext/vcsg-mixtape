@@ -47,6 +47,7 @@ function normalizeTrack(raw: unknown): Track {
     builderTiktokUrl: t.builderTiktokUrl ? String(t.builderTiktokUrl) : undefined,
     builderPatreonUrl: t.builderPatreonUrl ? String(t.builderPatreonUrl) : undefined,
     builderSpotifyUrl: t.builderSpotifyUrl ? String(t.builderSpotifyUrl) : undefined,
+    builderYoutubeUrl: t.builderYoutubeUrl ? String(t.builderYoutubeUrl) : undefined,
     youtubeId: t.youtubeId ? String(t.youtubeId) : undefined,
     youtubeStartTime: typeof t.youtubeStartTime === "number" ? t.youtubeStartTime : undefined,
     duration: t.duration ? String(t.duration) : undefined,
