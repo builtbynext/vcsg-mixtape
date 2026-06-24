@@ -10,7 +10,7 @@ curatorUrl: https://linkedin.com/in/stewartsg
 decoder: Stewart
 decoderUrl: https://linkedin.com/in/stewartsg
 runtime: 35m 25s
-builders: 7
+builders: 68
 inTheRoom: 41
 color: c
 published: true

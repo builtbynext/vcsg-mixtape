@@ -362,8 +362,8 @@ export function MixtapeExperience({ tape }: { tape: Tape }) {
   const stats = [
     { label: "demos", value: String(tracks.length) },
     ...(tape.runtime ? [{ label: "runtime", value: tape.runtime }] : []),
-    ...(tape.builders != null ? [{ label: "builders", value: String(tape.builders) }] : []),
-    ...(tape.inTheRoom != null ? [{ label: "in the room", value: String(tape.inTheRoom) }] : []),
+    ...(tape.builders != null ? [{ label: "Remote attendees", value: String(tape.builders) }] : []),
+    ...(tape.inTheRoom != null ? [{ label: "In the room", value: String(tape.inTheRoom) }] : []),
   ]
 
   const sameCreditPerson = isSameCreditPerson(

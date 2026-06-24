@@ -10,7 +10,7 @@ curatorUrl: https://linkedin.com/in/stewartsg
 decoder: Carillus
 decoderUrl: https://x.com/_carillus
 runtime: 1h 38m
-builders: 10
+builders: 7
 inTheRoom: 29
 color: b
 published: true
