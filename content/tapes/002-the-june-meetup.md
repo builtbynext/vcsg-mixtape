@@ -108,7 +108,7 @@ tracks:
 
 ---
 
-## Agentic OS
+## Xinni's Agentic Life OS
 
 ### What it is
 
