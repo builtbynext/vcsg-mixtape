@@ -29,10 +29,14 @@ tracks:
     builderYoutubeUrl: ""
 
   - name: Seasons
-    builder: Cassandra
+    builder: Cassandra & Gene
     youtubeId: "fUUKpWJHKOw"
-    duration: "05:19"
-    builderLinkedinUrl: "https://www.linkedin.com/in/cassandralimxy/"
+    duration: "05:19" 
+    builderLinkedinUrls:
+      - name: Cassandra
+        url: https://www.linkedin.com/in/cassandralimxy/
+      - name: Gene
+        url: https://www.linkedin.com/in/gene08/
     builderWebsiteUrl: ""
     builderInstagramUrl: ""
     builderTiktokUrl: ""
@@ -208,7 +212,7 @@ Map your creative project as visual stages (not a task list) and ask one collabo
 
 ### Under the hood
 
-- Built with Claude after months of failed experiments with Discord bots and open-source PM tools.
+- Built with Claude + Opencode + Codex after months of failed experiments with Discord bots and open-source PM tools.
 - **Script studio:** live script access for voice actors, no PDF versioning.
 - **Frame view:** the feature artists love most for coordinating across pipeline stages.
 - **Automated review:** Gemma checks each frame against script requirements.
@@ -218,6 +222,7 @@ Map your creative project as visual stages (not a task list) and ask one collabo
 - Design for the least technical person on your team, not the most organized.
 - Link issues across every view so feedback never lives in only one place.
 - Add automated checks (LLM or rules-based) for repetitive QA in visual pipelines.
+- Suggestions above probably be different if he had more time
 
 ## Ami
 
@@ -386,6 +391,6 @@ Attendees asked follow-up questions after each demo (Cassandra noted she would s
 
 ## The Recap
 
-Seven builders, seven very different vibes — from an agentic Life OS, iOS app for casual journalling with handmade and individually stitched illustrations to VTuber production dashboards, a Telegram lifestyle assistant, digital floral arrangement platform, AI photo rescue, and an interactive song-matching app. Just for the lulz, and somehow all of it useful.
+Seven builders, seven very different vibes — from an agentic Life OS, iOS app for casual journalling with handmade and individually stitched illustrations to VTuber production dashboards, a Telegram lifestyle assistant, digital floral arrangement platform, AI photo rescue, and an interactive song-matching app. Just for the lulz 🤡, and somehow all of it useful for themselves and others.
 
 
