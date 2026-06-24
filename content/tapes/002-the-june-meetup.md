@@ -15,7 +15,7 @@ inTheRoom: 41
 color: c
 published: true
 tracks:
-  - name: Agentic OS
+  - name: Xinni's Agentic Life OS
     builder: Xinni
     youtubeId: "lu2a3fIX14w"
     duration: "04:51"
@@ -386,4 +386,6 @@ Attendees asked follow-up questions after each demo (Cassandra noted she would s
 
 ## The Recap
 
-Seven builders, seven very different vibes — from an agentic Life OS, cozy journaling iOS App to VTuber production dashboards, a Telegram lifestyle assistant, digital floral arrangement platform, AI photo rescue, and an interactive song-matching app. Just for the lulz, and somehow all of it useful.
+Seven builders, seven very different vibes — from an agentic Life OS, iOS app for casual journalling with handmade and individually stitched illustrations to VTuber production dashboards, a Telegram lifestyle assistant, digital floral arrangement platform, AI photo rescue, and an interactive song-matching app. Just for the lulz, and somehow all of it useful.
+
+
