@@ -98,10 +98,10 @@ tracks:
     youtubeId: JvWsdToJjnU
     duration: "01:44"
     builderLinkedinUrl: ""
-    builderWebsiteUrl: ""
+    builderWebsiteUrl: "https://github.com/EdmundLimBoEn"
     builderInstagramUrl: ""
     builderTiktokUrl: ""
-    builderXUrl: ""
+    builderXUrl: "https://x.com/edmundlimboen"
     builderPatreonUrl: ""
     builderSpotifyUrl: ""
     builderYoutubeUrl: ""
