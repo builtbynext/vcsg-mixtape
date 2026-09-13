@@ -498,4 +498,4 @@ Recurring themes across answers:
 
 ## The Recap
 
-Seven builders plus a panel, all at Apple Developer Center: instant-camera craft, a returning fitness world, taste in the age of agentic coding, Liquid Glass, a self-improving local agent system, a Singapore palate compass, and a pair of personal widgets for limits and reminders. Designing with AI, without the slop 🔥
+Seven builders plus a panel: instant-camera craft, a returning fitness world, taste in the age of agentic coding, Liquid Glass, a self-improving local agent system, a Singapore palate compass, and a pair of personal widgets for limits and reminders. Designing with AI, without the slop 🔥
