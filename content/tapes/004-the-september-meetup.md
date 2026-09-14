@@ -106,7 +106,7 @@ tracks:
     builderSpotifyUrl: ""
     builderYoutubeUrl: ""
 
-  - name: Panelist Discussion
+  - name: Panelist Q&A
     builder: Group Q&A
     youtubeId: feFNQdnhv38
     duration: "13:45"
